@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>22BCE0554 Anmol Mittal</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://kit.fontawesome.com/a351f157f0.js"
+crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+<div class="container">
+<nav>
+<img src="images/logo.png" class="logo">
+<ul>
+<li><a href="#header">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<div class="header-text">
+<p>UI/UX Designer</p>
+<h1>Hi, I'm <span>Anmol Mittal </span><br>From India</h1>
+</div>
+</div>
+</div>
+<!-------About me-------------->
+<div id="about">
+<div class="container">
+<div class="row">
+<div class="about-col-1">
+<img src="images/anmol.jpg">
+</div>
+<div class="about-col-2">
+<h1 class="am">About Me</h1>
+<p class="para">As a versatile web developer and UI/UX designer, I am 
+passionate about bringing digital visions to life with a seamless blend of functionality 
+and aesthetics. With a keen eye for detail and a deep understanding of user experience 
+principles, I craft visually appealing and intuitive interfaces that prioritize user 
+satisfaction. My coding prowess extends across various languages, allowing me to transform 
+creative concepts into responsive and dynamic websites. I thrive in the intersection of 
+design and development, consistently delivering user-centric solutions that not only meet 
+but exceed client expectations. Let me be the architect of your digital success, where 
+innovation and user engagement converge harmoniously.</p>
+<div class="tab-titles">
+<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+<p class="tab-links" onclick="opentab('experience')">Experience</p>
+<p class="tab-links" onclick="opentab('education')">Education</p>
+</div>
+<div class="tab-contents active-tab" id="skills"> 
+<ul>
+<li><span>UI/UX</span><br>Designing Web Interface</li>
+<li><span>Web Development</span><br>Web app Development</li>
+<li><span>App Develoment</span><br>Buildnig Adroid/IOS apps</li>
+</ul>
+</div>
+<div class="tab-contents" id="experience">
+<ul>
+<li><span>Graphic Designing-Current</span><br>Designed for several 
+companies</li>
+<li><span>App Development-2023</span><br>Designed an App UI/UX for An 
+idea</li>
+<li><span>Logo Designing</span><br>Made many logos for different companies 
+as a Freelancer</li>
+</ul>
+</div>
+<div class="tab-contents" id="education">
+<ul>
+<li><span>2020</span><br>Class 10 from Amity International School Noida </li>
+<li><span>2022</span><br>Class 12 from Amity International School Noida</li>
+<li><span>2022-26</span><br>Ongoing B.Tech from VIT Vellore</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-------Services-------------->
+<div id="services">
+<div class="container">
+<h1 class="am">My Services</h1>
+<div class="services-list">
+<div>
+<i class="fa-solid fa-code"></i>
+<h2><b>Web Design</b></h2>
+<p>"Crafting visually appealing and user-centric websites is my passion. I 
+specialize in creating seamless, responsive, and intuitive web designs that not only 
+captivate users but also enhance their overall browsing experience. From conceptualization 
+to implementation, I bring creativity and functionality together to deliver websites that 
+leave a lasting impression."</p>
+<a href="#">Learn More</a>
+</div>
+<div>
+<i class="fa-brands fa-codepen"></i>
+<h2><b>UI/UX Design</b></h2>
+<p>"User experience is at the heart of what I do. I specialize in UI/UX design, 
+focusing on creating interfaces that are not just visually appealing but also highly 
+intuitive. Through user research, wireframing, and prototyping, I ensure that the end 
+product is a seamless and enjoyable experience for the user. Let me bring your digital 
+projects to life with a perfect blend of aesthetics and functionality."</p>
+<a href="#">Learn More</a>
+</div>
+<div>
+<i class="fa-solid fa-code-merge"></i>
+<h2><b>App Design</b></h2>
+<p>"As a dedicated app designer, I thrive on turning innovative ideas into 
+visually stunning and user-friendly applications. My expertise lies in creating intuitive 
+user interfaces that not only look great but also prioritize user experience. From 
+wireframing to the final design, I ensure that every element serves a purpose, 
+contributing to the success of the application."</p>
+<a href="#">Learn More</a>
+</div>
+</div>
+</div>
+</div>
+
+<!---------contact--------->
+<div id="contact">
+<h1 class="sub-title">Contact Me</h1>
+<table class="table">
+<caption class="table"><b>Social Media</b></caption>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Icons</th>
+</tr>
+</thead>
+<tbody class="tb">
+<tr>
+<td>Instagram</td>
+<td><i class="fa-brands fa-instagram"></i></td>
+</tr>
+<tr>
+<td>Facebook</td>
+<td><i class="fa-brands fa-facebook"></i></td>
+</tr>
+<tr>
+<td>Twitter</td>
+<td><i class="fa-brands fa-twitter"></i></td>
+</tr>
+<tr>
+<td>Linkedin</td>
+<td><i class="fa-brands fa-linkedin"></i></td>
+</tr>
+</tbody>
+</table>
+<button type="submit" class="btn btn2">Thank You</button>
+</div>
+<script>
+var tablinks=document.getElementsByClassName("tab-links");
+var tabcontents=document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+for(tablink of tablinks){
+tablink.classList.remove("active-link");
+}
+for(tabcontent of tabcontents){
+tabcontent.classList.remove("active-tab");
+}
+event.currentTarget.classList.add("active-link");
+document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+</body>
+</html>
